@@ -49,3 +49,4 @@ export default tseslint.config({
 })
 ```
 # gazprom-media-hosting-hackAI
+# gazprom-media-hosting-hackAI
