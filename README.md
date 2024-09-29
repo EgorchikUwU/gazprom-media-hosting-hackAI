@@ -1,52 +1,19 @@
-# React + TypeScript + Vite
+Проект: Автоматизация Разметки Видеоконтента Описание проекта Этот проект предназначен для автоматизации разметки видеоконтента, как профессионального, так и пользовательского. Система использует алгоритмы ИИ для анализа видеоматериалов и автоматической разметки ключевых объектов, сцен, событий, тональности, символов и звуков. Решение значительно сокращает трудозатраты и повышает качество обработки данных при работе с большими объемами видео.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Стек технологий Frontend:
 
-Currently, two official plugins are available:
+React: библиотека для создания динамичных пользовательских интерфейсов
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+TypeScript: статически типизированный язык для улучшения надежности кода
 
-## Expanding the ESLint configuration
+Backend:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+PHP: серверная часть для обработки запросов и управления бизнес-логикой
 
-- Configure the top-level `parserOptions` property like this:
+ИИ:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Python: обработка видео с использованием ИИ, написанная на Python
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+API:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# gazprom-media-hosting-hackAI
-# gazprom-media-hosting-hackAI
+Custom API: собственная реализация API для взаимодействия между фронтендом, бэкендом и ИИ
